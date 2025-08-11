@@ -87,3 +87,57 @@ html, body{
     object-fit: cover;
     object-position: top;
 }
+
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    .listBox {
+        width: 80vw; /* Take more width */
+        top: 5px; /* Reduce top gap */
+    }
+
+    .head {
+        margin-top: 5vh;
+    }
+
+    #input {
+        height: 6vh;
+        font-size: 14px;
+    }
+
+    .user {
+        height: auto; /* Allow flexible height */
+        padding: 20px 7px;
+    }
+
+    .user .userDetails p {
+        font-size: 14px;
+    }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+    .listBox {
+        width: 90vw; /* Almost full width */
+        border-radius: 8px;
+        box-shadow: none; /* Simpler shadow for performance */
+    }
+
+    .head {
+        margin-top: 3vh;
+    }
+
+    #input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .user .userDetails p {
+        font-size: 12px;
+    }
+
+    .user .image {
+        height: 35px;
+        width: 35px;
+    }
+}
